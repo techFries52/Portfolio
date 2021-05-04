@@ -4,11 +4,11 @@ const Header = (props) => {
   const { handleContentBodyChange } = props;
   return (
     <div className="headerback">
-      <div className="row justify-content-center">
+      <div className="row justify-content-end">
         <div className="col-lg-4">
           <h1>Jesse Lauesen</h1>
         </div>
-        <div className="col-lg-4 justify-content-end">
+        <div className="col-lg-3 justify-content-end">
           <button
             className="btn"
             onClick={() => handleContentBodyChange("about me")}

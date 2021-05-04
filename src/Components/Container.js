@@ -12,6 +12,22 @@ export default class Container extends Component {
     super(props);
     this.state = {
       activeBlock: "",
+      projects: [
+        {
+          title: "Fries and Ketchup",
+          description:
+            "A gaming community website used to keep track of variables pertaining too content",
+        },
+        {
+          title: "Home Workout App",
+          description:
+            "An app to make your own daily workout routine on the fly with timer",
+        },
+        {
+          title: "Color Game",
+          description: "random color genereator and selector game",
+        },
+      ],
     };
   }
 
@@ -36,7 +52,7 @@ export default class Container extends Component {
     } else {
       containerBlock = [
         <Hero />,
-        <BlueSpace />,
+        <AboutMe />,
         <Skills />,
         <Projects />,
         <ContactMe />,
