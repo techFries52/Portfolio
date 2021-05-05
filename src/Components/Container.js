@@ -36,33 +36,37 @@ export default class Container extends Component {
   };
 
   render() {
-    let containerBlock;
-    let contentBody = this.state.activeBlock;
+    // let containerBlock;
+    // let contentBody = this.state.activeBlock;
 
-    if (contentBody === "hero") {
-      containerBlock = <Hero />;
-    } else if (contentBody === "about me") {
-      containerBlock = <AboutMe />;
-    } else if (contentBody === "skills") {
-      containerBlock = [<BlueSpace />, <Skills />];
-    } else if (contentBody === "projects") {
-      containerBlock = <Projects />;
-    } else if (contentBody === "contact me") {
-      containerBlock = <ContactMe />;
-    } else {
-      containerBlock = [
-        <Hero />,
-        <AboutMe />,
-        <Skills />,
-        <Projects />,
-        <ContactMe />,
-      ];
-    }
+    // if (contentBody === "hero") {
+    //   containerBlock = <Hero />;
+    // } else if (contentBody === "about me") {
+    //   containerBlock = <AboutMe />;
+    // } else if (contentBody === "skills") {
+    //   containerBlock = [<BlueSpace />, <Skills />];
+    // } else if (contentBody === "projects") {
+    //   containerBlock = <Projects />;
+    // } else if (contentBody === "contact me") {
+    //   containerBlock = <ContactMe />;
+    // } else {
+    //   containerBlock = [
+    //     <Hero />,
+    //     <AboutMe />,
+    //     <Skills />,
+    //     <Projects />,
+    //     <ContactMe />,
+    //   ];
+    // }
 
     return (
       <div className="container-fluid">
         <Header handleContentBodyChange={this.handleContentBodyChange} />
-        {containerBlock}
+        <Hero />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <ContactMe />
       </div>
     );
   }

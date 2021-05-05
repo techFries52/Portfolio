@@ -14,7 +14,7 @@ code {
 
 .headerback {
   color: white;
-  background-color: #37dbff;
+  background-color: rgb(51, 51, 51);
   margin: 10px auto 30px auto;
 }
 
@@ -23,13 +23,29 @@ code {
 }
 
 .hero {
-  border-bottom: 5px solid #f79c25;
+  background-color: white;
+}
+
+.ojbottom {
+  border-bottom: 5px solid #ff9100;
+}
+
+.orangebg {
+  background-image: url(./assets/orange.png);
+  background-position: center;
+  margin: 0;
+}
+
+.oj {
+  background-color: #f79c25;
 }
 
 .skillcol {
-  background-color: white;
+  color: white;
+  background-color: rgb(51, 51, 51);
   margin-top: -100px;
-  border: 5px solid #f79c25;
+  margin-bottom: -100px;
+  border: 5px solid #ff9100;
   border-radius: 12px;
   text-align: center;
   z-index: 1;
@@ -43,8 +59,8 @@ code {
   padding-top: 100px;
   padding-bottom: 200px;
   color: white;
-  background-color: #37dbff;
-  border-bottom: 5px solid #f79c25;
+  background-color: #111111;
+  border-bottom: 5px solid #ff9100;
 }
 
 h3 {
@@ -56,7 +72,6 @@ li {
 }
 
 .contactme {
-  margin-top: 100px;
   height: 75px;
   color: white;
   background-color: #f79c25;
@@ -69,5 +84,11 @@ li {
 
 .bluespace {
   height: 300px;
-  background-color: #37dbff;
+  background-color: #111111;
+}
+
+.projects {
+  padding-top: 150px;
+  color: white;
+  background-color: #111111;
 }
