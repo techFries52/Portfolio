@@ -23,7 +23,7 @@ code {
 }
 
 .hero {
-  background-color: white;
+  background-color: #111111;
 }
 
 .ojbottom {
@@ -75,6 +75,7 @@ li {
   height: 75px;
   color: white;
   background-color: #f79c25;
+  text-align: center;
 }
 
 .contactbtn {
@@ -91,4 +92,5 @@ li {
   padding-top: 150px;
   color: white;
   background-color: #111111;
+  text-align: center;
 }

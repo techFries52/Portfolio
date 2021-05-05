@@ -3,8 +3,8 @@ import React from "react";
 const Header = (props) => {
   const { handleContentBodyChange } = props;
   return (
-    <div className="headerback">
-      <div className="row justify-content-end">
+    <div>
+      <div className="row justify-content-end headerback">
         <div className="col-lg-4">
           <h1>Jesse Lauesen</h1>
         </div>

@@ -4,13 +4,12 @@ const AboutMe = () => {
   return (
     <div className="row justify-content-center aboutme">
       <div className="col-md-6">
-        <h2>What I do</h2>
-        <h3>
-          From simple and sleek designs, to high profile elegance, I use
-          anything and everything available to me to help build web applications
-          that are a great fit for any visionaries. Whether or not it is front
-          end, back end, or a full stack project, I can build it for you.
-        </h3>
+        <h1>I'm Jesse Lauesen</h1>
+        <h2>I create stuff for the internet</h2>
+        <p>
+          I am a web developer based in Chicago, IL that builds websites and
+          designs graphics.
+        </p>
       </div>
     </div>
   );
