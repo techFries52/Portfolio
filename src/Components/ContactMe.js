@@ -3,7 +3,7 @@ import React from "react";
 const ContactMe = () => {
   return (
     <div className="oj">
-      <div className="row justify-content-center contactme align-items-center">
+      <div className="row justify-content-center contactme align-items-center fix-bottom">
         <div className="col-md-4">
           <h4>Have a Project in Mind?</h4>
         </div>

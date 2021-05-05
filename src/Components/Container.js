@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import ContactMe from "./ContactMe";
 import Header from "./Header";
-import BlueSpace from "./BlueSpace";
 import Projects from "./Projects";
+import WorkBanner from "./WorkBanner";
 
 export default class Container extends Component {
   constructor(props) {
@@ -36,37 +35,29 @@ export default class Container extends Component {
   };
 
   render() {
-    // let containerBlock;
-    // let contentBody = this.state.activeBlock;
+    let containerBlock;
+    let contentBody = this.state.activeBlock;
 
-    // if (contentBody === "hero") {
-    //   containerBlock = <Hero />;
-    // } else if (contentBody === "about me") {
-    //   containerBlock = <AboutMe />;
-    // } else if (contentBody === "skills") {
-    //   containerBlock = [<BlueSpace />, <Skills />];
-    // } else if (contentBody === "projects") {
-    //   containerBlock = <Projects />;
-    // } else if (contentBody === "contact me") {
-    //   containerBlock = <ContactMe />;
-    // } else {
-    //   containerBlock = [
-    //     <Hero />,
-    //     <AboutMe />,
-    //     <Skills />,
-    //     <Projects />,
-    //     <ContactMe />,
-    //   ];
-    // }
+    if (contentBody === "webdev") {
+      containerBlock = [<Header />, <AboutMe />, <Skills />,<Projects />, <ContactMe />];
+    } else if (contentBody === "about me") {
+      containerBlock = <AboutMe />;
+    } else if (contentBody === "skills") {
+      containerBlock = <Skills />;
+    } else if (contentBody === "projects") {
+      containerBlock = <Projects />;
+    } else if (contentBody === "contact me") {
+      containerBlock = <ContactMe />;
+    } else {
+      containerBlock = [
+        <Header handleContentBodyChange={this.handleContentBodyChange} />,
+        <WorkBanner handleContentBodyChange={this.handleContentBodyChange} /> 
+      ];
+    }
 
     return (
       <div className="container-fluid">
-        <Header handleContentBodyChange={this.handleContentBodyChange} />
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe />
+        {containerBlock}        
       </div>
     );
   }

@@ -7,7 +7,7 @@ const AboutMe = () => {
         <h1>I'm Jesse Lauesen</h1>
         <h2>I create stuff for the internet</h2>
         <p>
-          I am a web developer based in Chicago, IL that builds websites and
+          I am a creator based in Chicago, IL that builds websites and
           designs graphics.
         </p>
       </div>

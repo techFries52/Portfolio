@@ -1,4 +1,8 @@
 body {
+  height: 100vh;
+  background-image: url(./assets/steel\ circuit\ bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -12,9 +16,10 @@ code {
     monospace;
 }
 
+
 .headerback {
   color: white;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(29, 29, 29);
   margin: 10px auto 30px auto;
 }
 
@@ -22,8 +27,19 @@ code {
   color: white;
 }
 
-.hero {
-  background-color: #111111;
+.workbanner {
+  
+  margin: 200px auto;
+  color: white;
+  height: 300px;
+  background-color: rgba(34, 34, 34, 0.76);
+  border: 5px solid #1d1d1d;
+  border-radius: 27px;
+}
+
+.fix-bottom {
+  position: relative;
+  bottom: 0;
 }
 
 .ojbottom {
@@ -53,13 +69,13 @@ code {
 
 .skilllist {
   list-style: none;
+  padding-left: 0;
 }
 
 .aboutme {
-  padding-top: 100px;
-  padding-bottom: 200px;
+  margin-top: 500px;
+  padding-bottom: 400px;
   color: white;
-  background-color: #111111;
   border-bottom: 5px solid #ff9100;
 }
 
@@ -85,12 +101,20 @@ li {
 
 .bluespace {
   height: 300px;
-  background-color: #111111;
 }
 
 .projects {
+  margin: 200px auto;
   padding-top: 150px;
   color: white;
-  background-color: #111111;
   text-align: center;
+  height: 300px;
+  background-color: rgba(34, 34, 34, 0.76);
+  border: 5px solid #1d1d1d;
+  border-radius: 27px;
+}
+
+.card {
+  background: local !important;
+  border: none !important;
 }
