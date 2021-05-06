@@ -8,12 +8,15 @@ const Skills = () => {
           <h3>Front-End Developer</h3>
           <ul className="skilllist">
             <li>React</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Blender</li>
+            <li>GraphQL</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>MongoDB</li>
-            <li>GraphQL</li>
-            <li>Bootstrap</li>
-            <li>Blender</li>
             <li>Git</li>
           </ul>
         </div>

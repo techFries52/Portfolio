@@ -16,6 +16,9 @@ code {
     monospace;
 }
 
+nav li:hover {
+  cursor: pointer;
+}
 
 .headerback {
   color: white;
@@ -28,7 +31,6 @@ code {
 }
 
 .workbanner {
-  
   margin: 200px auto;
   color: white;
   height: 300px;
@@ -74,7 +76,7 @@ code {
 
 .aboutme {
   margin-top: 500px;
-  padding-bottom: 400px;
+  padding-bottom: 300px;
   color: white;
   border-bottom: 5px solid #ff9100;
 }

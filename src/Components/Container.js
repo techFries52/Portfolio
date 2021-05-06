@@ -39,7 +39,7 @@ export default class Container extends Component {
     let contentBody = this.state.activeBlock;
 
     if (contentBody === "webdev") {
-      containerBlock = [<Header />, <AboutMe />, <Skills />,<Projects />, <ContactMe />];
+      containerBlock = [<AboutMe />, <Skills />, <Projects />, <ContactMe />];
     } else if (contentBody === "about me") {
       containerBlock = <AboutMe />;
     } else if (contentBody === "skills") {
@@ -50,14 +50,17 @@ export default class Container extends Component {
       containerBlock = <ContactMe />;
     } else {
       containerBlock = [
-        <Header handleContentBodyChange={this.handleContentBodyChange} />,
-        <WorkBanner handleContentBodyChange={this.handleContentBodyChange} /> 
+        <WorkBanner handleContentBodyChange={this.handleContentBodyChange} />,
       ];
     }
 
     return (
       <div className="container-fluid">
-        {containerBlock}        
+        <Header handleContentBodyChange={this.handleContentBodyChange} />,
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <ContactMe />
       </div>
     );
   }
