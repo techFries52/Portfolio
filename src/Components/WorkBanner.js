@@ -1,5 +1,4 @@
 import React from "react";
-import Orange from "../assets/orange.png";
 
 const WorkBanner = (props) => {
   const { handleContentBodyChange } = props;

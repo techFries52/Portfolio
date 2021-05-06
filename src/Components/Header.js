@@ -3,9 +3,8 @@ import React from "react";
 const Header = (props) => {
   const { handleContentBodyChange } = props;
   return (
-    <div>
-      <div className="row justify-content-end headerback">
-        <nav className="navbar navbar-expand-lg">
+    
+        <nav className="sidebar headerback">
           <button
             className="navbar-toggler"
             type="button"
@@ -60,8 +59,7 @@ const Header = (props) => {
             </ul>
           </div>
         </nav>
-      </div>
-    </div>
+      
   );
 };
 

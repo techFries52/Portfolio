@@ -16,14 +16,28 @@ code {
     monospace;
 }
 
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sidebar {
+  min-width: 75px;
+  max-width: 75px;
+  min-height: 100vh;
+  position: sticky;
+}
+
 nav li:hover {
   cursor: pointer;
+  color: white;
 }
 
 .headerback {
   color: white;
-  background-color: rgb(29, 29, 29);
-  margin: 10px auto 30px auto;
+  background-color: rgb(12, 12, 12);
 }
 
 .headerback .btn {

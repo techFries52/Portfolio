@@ -55,12 +55,15 @@ export default class Container extends Component {
     }
 
     return (
-      <div className="container-fluid">
-        <Header handleContentBodyChange={this.handleContentBodyChange} />,
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe />
+      <div className="wrapper">
+          <Header handleContentBodyChange={this.handleContentBodyChange} />,
+
+        <div className="container-fluid">
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <ContactMe />
+        </div>
       </div>
     );
   }
