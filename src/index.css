@@ -38,6 +38,7 @@ nav li:hover {
 .headerback {
   color: white;
   background-color: rgb(12, 12, 12);
+  text-align: center;
 }
 
 .headerback .btn {

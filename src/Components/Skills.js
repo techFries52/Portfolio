@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div>
       <div className="row justify-content-center orangebg ojbottom">
-        <div className="col-md-4 skillcol">
+        <div className="col-md-4 skillcol" id="#skills">
           <h3>Front-End Developer</h3>
           <ul className="skilllist">
             <li>React</li>

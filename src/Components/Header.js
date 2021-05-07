@@ -4,60 +4,27 @@ const Header = (props) => {
   const { handleContentBodyChange } = props;
   return (
     
-        <nav className="sidebar headerback">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+        <nav className="sidebar headerback">          
+             <ul className="navbar-nav mr-auto">
               <li
                 className="nav-item nav-link active"
                 onClick={() => handleContentBodyChange("")}
               >
                 Home
               </li>
-              <li className="nav-item nav-link">Web</li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </div>
-              </li>
+              <a href="#skills">
+              <li className="nav-item nav-link">Skills</li>
+
+              </a>
+              <li className="nav-item nav-link">Skills</li>
+              
               <li className="nav-item">
                 <a className="nav-link disabled" href="#">
                   Disabled
                 </a>
               </li>
             </ul>
-          </div>
         </nav>
       
   );
