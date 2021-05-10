@@ -56,7 +56,10 @@ export default class Container extends Component {
 
     return (
       <div className="wrapper">
-          <Header handleContentBodyChange={this.handleContentBodyChange} />,
+        <div className="sidebar">
+          <Header handleContentBodyChange={this.handleContentBodyChange} />
+
+        </div>
 
         <div className="container-fluid">
           <AboutMe />

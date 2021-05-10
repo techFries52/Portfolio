@@ -19,24 +19,27 @@ code {
 .wrapper {
   display: flex;
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   align-items: stretch;
 }
 
+.stickystick {
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 40%;
 
+}
 
 .sidebar {
   min-width: 75px;
   max-width: 75px;
   min-height: 100%;
-  position: -webkit-sticky;
-  position: sticky !important;
-  top: 0;
-  bottom: auto;
-  display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  background-color: rgb(12, 12, 12);
+  text-align: center;
 }
 
 nav li:hover {
@@ -44,11 +47,6 @@ nav li:hover {
   color: white;
 }
 
-.headerback {
-  color: white;
-  background-color: rgb(12, 12, 12);
-  text-align: center;
-}
 
 .headerback .btn {
   color: white;
@@ -99,7 +97,7 @@ nav li:hover {
 }
 
 .herologo {
-  margin-top: 150px;
+  margin-top: 300px;
   max-width: 1100px;
 }
 

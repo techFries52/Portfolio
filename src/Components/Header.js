@@ -5,31 +5,20 @@ const Header = (props) => {
   return (
     
 
-        <nav className="sidebar headerback">  
-          <div className="row">
-            <div className="col-12">
+        <nav className="sidebar">  
 
-             <ul className="navbar-nav mr-auto">
+             <ul className="navbar-nav mr-auto stickystick">
               <li
                 className="nav-item nav-link active"
                 onClick={() => handleContentBodyChange("")}
               >
                 <i class="fas fa-home"></i>
               </li>
-              <a href="#skills">
-              <li className="nav-item nav-link">Skills</li>
-
-              </a>
-              <li className="nav-item nav-link">Skills</li>
               
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Disabled
-                </a>
-              </li>
-            </ul>
-            </div>
-          </div>        
+              <li className="nav-item nav-link"><i class="fas fa-project-diagram"></i></li>
+              
+              <li className="nav-item"><i class="far fa-envelope"></i></li>
+            </ul>     
         </nav>
       
   );
