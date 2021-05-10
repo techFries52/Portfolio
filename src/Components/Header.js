@@ -5,13 +5,16 @@ const Header = (props) => {
   return (
     
 
-        <nav className="sidebar headerback">          
+        <nav className="sidebar headerback">  
+          <div className="row">
+            <div className="col-12">
+
              <ul className="navbar-nav mr-auto">
               <li
                 className="nav-item nav-link active"
                 onClick={() => handleContentBodyChange("")}
               >
-                Home
+                <i class="fas fa-home"></i>
               </li>
               <a href="#skills">
               <li className="nav-item nav-link">Skills</li>
@@ -25,6 +28,8 @@ const Header = (props) => {
                 </a>
               </li>
             </ul>
+            </div>
+          </div>        
         </nav>
       
   );
