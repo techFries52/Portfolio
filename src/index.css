@@ -133,16 +133,31 @@ li {
 
 .projects {
   margin: 200px auto;
-  padding-top: 150px;
+  padding-top: 15px;
   color: white;
   text-align: center;
-  height: 300px;
+  height: 600px;
   background-color: rgba(34, 34, 34, 0.76);
   border: 5px solid #1d1d1d;
   border-radius: 27px;
 }
 
+
+
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
+
 .card {
-  background: local !important;
-  border: none !important;
+  background-color: rgba(22, 22, 22, 0.808) !important;
+  width: 400px;
+  padding: 5px;
+  border: 5px solid #ff9100 !important;
+  border-radius: 27px;
+}
+
+.cardtop {
+  min-height: 195px;
+  max-width: 400px;
+  min-width: 400px;
+  background-image: url(./assets/workoutbg.png);
 }
