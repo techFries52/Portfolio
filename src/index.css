@@ -65,12 +65,8 @@ nav li:hover {
 .orangebg {
   background-image: url(./assets/orange.png);
   background-position: center;
-  margin: 0;
 }
 
-.oj {
-  background-color: #f79c25;
-}
 
 .skillcol {
   padding: 0 !important;
