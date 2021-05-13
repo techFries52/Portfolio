@@ -1,7 +1,7 @@
-import React from "react";
+import React,{ useRef } from "react";
 
 const Header = (props) => {
-  const { handleContentBodyChange } = props;
+  
   return (
     
 
@@ -10,7 +10,6 @@ const Header = (props) => {
              <ul className="navbar-nav mr-auto stickystick">
               <li
                 className="nav-item nav-link active"
-                onClick={() => handleContentBodyChange("")}
               >
                 <i class="fas fa-home"></i>
               </li>

@@ -10,36 +10,38 @@ export default class Container extends Component {
     super(props);
     this.state = {
       activeBlock: "",
-      projects: [
-        {
-          title: "Fries and Ketchup",
-          description:
-            "A gaming community website used to keep track of variables pertaining too content",
-        },
-        {
-          title: "Home Workout App",
-          description:
-            "An app to make your own daily workout routine on the fly with timer",
-        },
-        {
-          title: "Color Game",
-          description: "random color genereator and selector game",
-        },
-      ],
+      width: window.innerWidth
+     
     };
   }
 
-  handleContentBodyChange = (value) => {
-    this.setState({ activeBlock: value });
-  };
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+  
+  
 
   render() {
-    
+    const { width } = this.state;
+    const isMobile = width <= 500;
 
-    return (
-
+    if (isMobile) {
+      return (
+        <div className="container-fluid">
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <ContactMe />
+          </div>
+      );
+    } else {
+      return (
         <div className="wrapper">
-            <Header handleContentBodyChange={this.handleContentBodyChange} />
+            <Header  />
 
 
           <div className="container-fluid">
@@ -49,6 +51,8 @@ export default class Container extends Component {
             <ContactMe />
           </div>
         </div>
-    );
+      );
+    }
+
   }
 }
