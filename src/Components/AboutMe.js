@@ -7,7 +7,7 @@ import NameLogoSmol from "../assets/namescifismol.png";
 
 const AboutMe = () => {
   return (
-    <div>
+    <>
       <div className="row">
         <img className="herologo" src={NameLogoBig} srcset={`${NameLogoSmol} 300w, ${NameLogo3} 768w, ${NameLogoBig} 1280w`} />
       </div>
@@ -22,7 +22,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

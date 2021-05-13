@@ -55,19 +55,18 @@ export default class Container extends Component {
     }
 
     return (
-      <div className="wrapper">
-        <div className="sidebar">
-          <Header handleContentBodyChange={this.handleContentBodyChange} />
 
-        </div>
+        <div className="wrapper">
+            <Header handleContentBodyChange={this.handleContentBodyChange} />
 
-        <div className="container-fluid">
-          <AboutMe />
-          <Skills />
-          <Projects />
-          <ContactMe />
+
+          <div className="container-fluid">
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <ContactMe />
+          </div>
         </div>
-      </div>
     );
   }
 }

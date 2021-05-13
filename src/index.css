@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   height: 100vh;
   background-image: url(./assets/steel\ circuit\ bg.png);
   background-repeat: no-repeat;
@@ -10,6 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -32,13 +35,11 @@ code {
 }
 
 .sidebar {
-  min-width: 75px;
-  max-width: 75px;
   min-height: 100%;
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -81,10 +82,10 @@ nav li:hover {
 }
 
 .skillcol {
+  padding: 0 !important;
   color: white;
   background-color: rgb(51, 51, 51);
-  margin-top: -100px;
-  margin-bottom: -100px;
+  margin: -100px 0px;
   border: 5px solid #ff9100;
   border-radius: 12px;
   text-align: center;
@@ -137,9 +138,6 @@ li {
   color: white;
   text-align: center;
   height: 600px;
-  background-color: rgba(34, 34, 34, 0.76);
-  border: 5px solid #1d1d1d;
-  border-radius: 27px;
 }
 
 
@@ -148,16 +146,19 @@ li {
 /////////////////////////////////////////////////// */
 
 .card {
-  background-color: rgba(22, 22, 22, 0.808) !important;
+  background-color: rgb(19, 19, 19) !important;
   width: 400px;
   padding: 5px;
-  border: 5px solid #ff9100 !important;
   border-radius: 27px;
+  margin: auto !important;
+  border-radius: 17px !important;
+  box-shadow: 0px 8px 10px #e24203, 
+  -10px 8px 15px #ad6200, 10px 8px 15px #e20a03
 }
 
-.cardtop {
-  min-height: 195px;
-  max-width: 400px;
-  min-width: 400px;
-  background-image: url(./assets/workoutbg.png);
+
+
+.btn-primary {
+  background-color: #ff9100 !important;
+  border: none !important;
 }

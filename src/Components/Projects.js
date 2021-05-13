@@ -1,26 +1,41 @@
 import React from "react";
-import workoutbg from "../assets/workoutbg.png"
+import hwalogo from "../assets/HWAlogo.png"
 
 const Projects = (props) => {
   const { projects } = props;
   return (
-    <div className="projects">
-      <div className="row justify-content-center">
-        <div className="col-md-6">
+    <div className="row justify-content-center projects">
+        <div className="col-md-4">
           <div class="card">
-            <img src={workoutbg} class="card-img-top" alt="..." />
+            <img src={hwalogo} class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Home Workout App</h5>
+              <p class="card-text">An App to build daily workout routines</p>
+              <a href="workout52.herokuapp.com" class="btn btn-primary">Visit</a>
             </div>
           </div>
         </div>
-        <div className="col-md-6">
-          <h4 id="projectHeader">Projects</h4>
+        <div className="col-md-4">
+          <div class="card">
+            <img src={hwalogo} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Home Workout App</h5>
+              <p class="card-text">An App to build daily workout routines</p>
+              <a href="workout52.herokuapp.com" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div class="card">
+            <img src={hwalogo} class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Home Workout App</h5>
+              <p class="card-text">An App to build daily workout routines</p>
+              <a href="workout52.herokuapp.com" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
