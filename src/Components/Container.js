@@ -4,7 +4,6 @@ import Skills from "./Skills";
 import ContactMe from "./ContactMe";
 import Header from "./Header";
 import Projects from "./Projects";
-import WorkBanner from "./WorkBanner";
 
 export default class Container extends Component {
   constructor(props) {
@@ -35,24 +34,7 @@ export default class Container extends Component {
   };
 
   render() {
-    let containerBlock;
-    let contentBody = this.state.activeBlock;
-
-    if (contentBody === "webdev") {
-      containerBlock = [<AboutMe />, <Skills />, <Projects />, <ContactMe />];
-    } else if (contentBody === "about me") {
-      containerBlock = <AboutMe />;
-    } else if (contentBody === "skills") {
-      containerBlock = <Skills />;
-    } else if (contentBody === "projects") {
-      containerBlock = <Projects />;
-    } else if (contentBody === "contact me") {
-      containerBlock = <ContactMe />;
-    } else {
-      containerBlock = [
-        <WorkBanner handleContentBodyChange={this.handleContentBodyChange} />,
-      ];
-    }
+    
 
     return (
 

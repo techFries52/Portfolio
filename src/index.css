@@ -117,15 +117,15 @@ li {
 }
 
 .contactme {
-  height: 75px;
+  min-height: 75px;
   color: white;
-  background-color: #f79c25;
+  background-color: #e24203;
   text-align: center;
 }
 
 .contactbtn {
   color: white !important;
-  background-color: #ce7500 !important;
+  background-color: #ce0000 !important;
 }
 
 .bluespace {
@@ -137,7 +137,6 @@ li {
   padding-top: 15px;
   color: white;
   text-align: center;
-  height: 600px;
 }
 
 
@@ -156,6 +155,11 @@ li {
   -10px 8px 15px #ad6200, 10px 8px 15px #e20a03
 }
 
+.cardimg {
+  min-height: 225px;
+  max-height: 225px;
+  border-radius: 27px;
+}
 
 
 .btn-primary {

@@ -1,6 +1,4 @@
 import React from "react";
-import { Picture } from "react-responsive-picture";
-import NameLogo from "../assets/orangelogo.svg"
 import NameLogo3 from "../assets/namescifi3.png";
 import NameLogoBig from "../assets/namescifibig.png";
 import NameLogoSmol from "../assets/namescifismol.png";
