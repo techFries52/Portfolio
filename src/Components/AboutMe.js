@@ -12,7 +12,7 @@ const AboutMe = () => {
 
       <div className="row justify-content-center aboutme">
 
-        <div className="col-md-6">
+        <div className="col-md-6 aboutmep">
           <h2>I create stuff for the internet</h2>
           <p className="">
             I am a creator based in Chicago, IL that builds websites and designs

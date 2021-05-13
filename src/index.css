@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   height: 100vh;
-  background-image: url(./assets/steel\ circuit\ bg.png);
+  background-image: url(./assets/redsteelbg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -38,7 +38,7 @@ code {
   min-height: 100%;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #e20a03;
   background-color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -71,7 +71,7 @@ nav li:hover {
 .skillcol {
   padding: 0 !important;
   color: white;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(19, 3, 3);
   margin: -100px 0px;
   border: 5px solid #ff9100;
   border-radius: 12px;
@@ -93,6 +93,12 @@ nav li:hover {
   padding-bottom: 300px;
   color: white;
   border-bottom: 5px solid #ff9100;
+}
+
+.aboutmep {
+  background-color: rgb(19, 3, 3);
+  border: 5px solid rgb(126, 0, 0);
+  border-radius: 17px;
 }
 
 h3 {
@@ -119,8 +125,13 @@ li {
   height: 300px;
 }
 
+.projectslogo {
+  margin-top: 150px;
+}
+
 .projects {
-  margin: 200px auto;
+  margin-top: -40px;
+  margin-bottom: 200px;
   padding-top: 15px;
   color: white;
   text-align: center;
@@ -132,14 +143,14 @@ li {
 /////////////////////////////////////////////////// */
 
 .card {
-  background-color: rgb(19, 19, 19) !important;
+  background-color: rgb(19, 3, 3) !important;
   max-width: 400px;
   padding: 5px;
   border-radius: 27px;
   margin: 20px auto !important;
   border-radius: 17px !important;
   box-shadow: 0px 8px 10px #e24203, 
-  -10px 8px 15px #ad6200, 10px 8px 15px #e20a03
+  -10px 8px 15px #e20a03, 10px 8px 15px #e20a03
 }
 
 .cardimg {
