@@ -19,7 +19,7 @@ const Projects = (props) => {
               <div className="card-body">
                 <h5 className="card-title">Home Workout App</h5>
                 <p className="card-text">An App to build daily workout routines using React.js</p>
-                <a href="workout52.herokuapp.com" className="btn btn-primary">Visit</a>
+                <a href="http://workout52.herokuapp.com" className="btn btn-primary">Visit</a>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Projects = (props) => {
               <div className="card-body">
                 <h5 className="card-title">Fries and Ketchup</h5>
                 <p className="card-text">A gaming community website using a node.js backend and express framework.</p>
-                <a href="friesandketchup.com" className="btn btn-primary">Visit</a>
+                <a href="http://www.friesandketchup.com" className="btn btn-primary">Visit</a>
               </div>
             </div>
           </div>

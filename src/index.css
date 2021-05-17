@@ -144,6 +144,7 @@ li {
 
 .projectslogo {
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .projects {
@@ -181,5 +182,24 @@ li {
 /////////////////////////////////////////////////// */
 
 .formrow {
-  height: 100vh;
+  height: 100vh;  
+  padding: 100px;
+}
+
+.formcol {
+  text-align: center;
+  color: white;
+  background-color: rgb(19, 3, 3) !important;
+  padding: 5px;
+  padding-top: 50px;
+  border-radius: 27px;
+  margin: 20px auto !important;
+  border-radius: 17px !important;
+  box-shadow: 0px 8px 10px #e24203, 
+  -10px 8px 15px #e20a03, 10px 8px 15px #e20a03;
+}
+
+textarea {
+  height: 100%;
+  width: 75%;
 }

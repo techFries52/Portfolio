@@ -1,7 +1,7 @@
-import React,{ setState} from "react";
+import React from "react";
 
 const ContactMe = (props) => {
-  const { activeBlock, handleModalOpen } = props;
+  const { handleModalOpen } = props;
 
  
   

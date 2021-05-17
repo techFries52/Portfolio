@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = (props) => {
-  const { handleHomeClick, handleModalOpen } = props;
+  const { handleHomeClick, handleModalOpen, handleProjectClick } = props;
   return (
     
       <div>
@@ -11,14 +11,14 @@ const Header = (props) => {
              <ul className="navbar-nav mr-auto stickystick">
                 <li
                   className="nav-item nav-link active"
-                  onClick={handleHomeClick}
+                  onClick={() => handleHomeClick()}
                 >
                   <i className="fas fa-home"></i>
                 </li>
                 
-                <li className="nav-item nav-link"><i className="fas fa-project-diagram"></i></li>
+                <li className="nav-item nav-link"><i className="fas fa-project-diagram" onClick={()=> handleProjectClick()}></i></li>
                 
-                <li className="nav-item" onClick={handleModalOpen}><i className="far fa-envelope"></i></li>
+                <li className="nav-item" onClick={() => handleModalOpen()}><i className="far fa-envelope"></i></li>
             </ul>     
         </nav>
       

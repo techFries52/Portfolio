@@ -27,6 +27,10 @@ export default class Container extends Component {
   handleModalOpen = () => {
     this.setState({activeBlock: "modalopen"})
   }
+
+  handleProjectClick = () => {
+    this.setState({activeBlock: "project"})
+  }
   
   handleHomeClick = () => {
     this.setState({activeBlock: ""})
@@ -39,18 +43,17 @@ export default class Container extends Component {
 
     if (isMobile) {
       return (
-
         <div className="container-fluid">
             <AboutMe />
             <Skills />
             <Projects />
-            <ContactMe activeBlock={activeBlock} />
+            <ContactMe handleModalOpen={this.handleModalOpen} />
           </div>
       );
     } else if(activeBlock === "modalopen") {
       return(
         <div className="wrapper">
-            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} />
+            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} handleProjectClick={this.handleProjectClick} />
 
 
           <div className="container-fluid">
@@ -58,10 +61,21 @@ export default class Container extends Component {
           </div>
         </div>
       )
+    } else if(activeBlock === "project") {
+      return(
+        <div className="wrapper">
+            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} handleProjectClick={this.handleProjectClick} />
+
+
+          <div className="container-fluid">
+            <Projects />
+          </div>
+        </div>
+      )
     } else {
       return (
         <div className="wrapper">
-            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} />
+            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} handleProjectClick={this.handleProjectClick} />
 
 
           <div className="container-fluid">
