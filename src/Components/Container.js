@@ -4,6 +4,7 @@ import Skills from "./Skills";
 import ContactMe from "./ContactMe";
 import Header from "./Header";
 import Projects from "./Projects";
+import Modal from "./Modal";
 
 export default class Container extends Component {
   constructor(props) {
@@ -22,33 +23,52 @@ export default class Container extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowSizeChange);
   }
+
+  handleModalOpen = () => {
+    this.setState({activeBlock: "modalopen"})
+  }
   
+  handleHomeClick = () => {
+    this.setState({activeBlock: ""})
+  }
   
 
   render() {
-    const { width } = this.state;
+    const { activeBlock, width } = this.state;
     const isMobile = width <= 500;
 
     if (isMobile) {
       return (
+
         <div className="container-fluid">
             <AboutMe />
             <Skills />
             <Projects />
-            <ContactMe />
+            <ContactMe activeBlock={activeBlock} />
           </div>
       );
+    } else if(activeBlock === "modalopen") {
+      return(
+        <div className="wrapper">
+            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} />
+
+
+          <div className="container-fluid">
+            <Modal />
+          </div>
+        </div>
+      )
     } else {
       return (
         <div className="wrapper">
-            <Header  />
+            <Header handleHomeClick={this.handleHomeClick} handleModalOpen={this.handleModalOpen} />
 
 
           <div className="container-fluid">
             <AboutMe />
             <Skills />
             <Projects />
-            <ContactMe />
+            <ContactMe activeBlock={activeBlock} handleModalOpen={this.handleModalOpen} />
           </div>
         </div>
       );

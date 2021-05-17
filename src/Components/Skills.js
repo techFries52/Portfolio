@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-      <div className="row justify-content-center orangebg ojbottom">
+      <div className="row justify-content-center orangebg">
         <div className="col-md-4 skillcol" id="#skills">
           
           <h3>Front-End Developer</h3>

@@ -19,6 +19,10 @@ code {
     monospace;
 }
 
+        /* Sidebar and Main Content Spacing */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
+
 .wrapper {
   display: flex;
   position: relative;
@@ -34,6 +38,8 @@ code {
 
 }
 
+
+
 .sidebar {
   min-height: 100%;
   align-items: center;
@@ -43,28 +49,22 @@ code {
   text-align: center;
 }
 
+/* Nav Bar */
 nav li:hover {
   cursor: pointer;
   color: white;
 }
 
+              /* Skill Column */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
 
-.headerback .btn {
-  color: white;
-}
 
-.fix-bottom {
-  position: relative;
-  bottom: 0;
-}
-
-.ojbottom {
-  border-bottom: 5px solid #ff9100;
-}
 
 .orangebg {
   background-image: url(./assets/orange.png);
   background-position: center;
+  border-bottom: 5px solid #ff9100;
 }
 
 
@@ -84,10 +84,15 @@ nav li:hover {
   padding-left: 0;
 }
 
-.herologo {
+                /* About Me Hero */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
+
+.herologo { 
   margin-top: 300px;
   max-width: 1100px;
 }
+
 
 .aboutme {
   padding-bottom: 300px;
@@ -109,6 +114,10 @@ li {
   padding: 10px;
 }
 
+               /* Contact Me Footer */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
+
 .contactme {
   min-height: 75px;
   color: white;
@@ -121,9 +130,17 @@ li {
   background-color: #ce0000 !important;
 }
 
-.bluespace {
-  height: 300px;
+
+.fix-bottom {
+  position: relative;
+  bottom: 0;
 }
+
+
+
+                /* Projects Section */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
 
 .projectslogo {
   margin-top: 150px;
@@ -136,11 +153,6 @@ li {
   color: white;
   text-align: center;
 }
-
-
-
-/* ///////////////////////////////////////////////////
-/////////////////////////////////////////////////// */
 
 .card {
   background-color: rgb(19, 3, 3) !important;
@@ -163,4 +175,11 @@ li {
 .btn-primary {
   background-color: #ff9100 !important;
   border: none !important;
+}
+                /* Modal */
+/* ///////////////////////////////////////////////////
+/////////////////////////////////////////////////// */
+
+.formrow {
+  height: 100vh;
 }
